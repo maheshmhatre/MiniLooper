@@ -1,0 +1,112 @@
+<TableLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            
+            android:shrinkColumns="*"  android:stretchColumns="*" android:background="#ffffff">
+
+			
+	<TableRow
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:gravity="center_horizontal">			
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_marginTop="20dip"
+        android:padding="10dip"
+        android:text="Start Pos"
+     	android:layout_width="match_parent"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textStartTime"
+        android:layout_marginTop="20dip"
+        android:text="0"
+        android:textColor="#000000"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+	</TableRow>
+	
+
+	    <SeekBar
+	    android:layout_width="match_parent"
+	    android:padding="10dip"    
+        android:id="@+id/seekBarStart"
+        android:progressDrawable="@drawable/styled_progress"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:thumb="@drawable/thumbler_small"
+        android:indeterminate="false"
+/>
+	
+	<TableRow
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:gravity="center_horizontal">
+
+	    <TextView
+	        android:id="@+id/textView2"
+	        android:padding="10dip"
+	        android:text="End Pos"
+	        android:layout_width="wrap_content"
+	        android:textAppearance="?android:attr/textAppearanceLarge"
+	        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textEndTime"
+        android:textColor="#000000"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+	</TableRow>
+	
+	
+	<SeekBar
+        android:id="@+id/seekBarStop"
+        android:layout_width="match_parent"
+	    android:padding="10dip"  
+        android:progress="100"
+        android:progressDrawable="@drawable/styled_progress"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:thumb="@drawable/thumbler_small"
+         android:indeterminate="false"
+/>
+
+
+    <Button
+        android:id="@+id/buttonLoop"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="#CFD8DC"
+		android:layout_margin="5dip"
+        android:text="Loop" />
+    
+    <Button
+        android:id="@+id/buttonStart"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="#CFD8DC"
+		android:layout_margin="5dip"
+        android:text="Start" />
+
+    <Button
+        android:id="@+id/buttonStop"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="#CFD8DC"
+		android:layout_margin="5dip"
+        android:text="Stop" />
+
+<TableRow>
+
+    <TextView
+        android:id="@+id/textViewStatus"
+        android:layout_margin="10dip"
+        android:gravity="left"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000" />
+
+</TableRow>
+</TableLayout>
